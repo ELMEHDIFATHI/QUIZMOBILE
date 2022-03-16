@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingStart="28dp"
+    android:paddingEnd="28dp"
+    android:layout_centerInParent="true"
+    tools:context=".quiz3">
+
+
+    <ImageView
+        android:layout_width="411dp"
+        android:layout_height="160dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:text="Je souhaite enregistrer le mot de passe d’un utilisateur. Laquelle de ces solutions ne me permet PAS de le faire de manière sécurisée ?"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+
+        >
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=" L'enregistrer sur la carte SD du téléphone
+             en accédant à l'external storage
+" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="L'enregistrer sur un serveur via une connexion à internet utilisant
+            le protocole HTTPS en envoyant le mot de passe dans le body de la requête (PUT / POST)" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Le chiffrer et l'enregistrer dans une base de données SQLite de la zone interne de stockage de l'application" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="L'onregister dans les sharedpreferences de l application avec une cle de chiffrement" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bnext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/BLUE"
+        />
+
+
+</LinearLayout>

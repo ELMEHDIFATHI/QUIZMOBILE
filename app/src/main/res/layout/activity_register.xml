@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingStart="28dp"
+    android:paddingEnd="28dp"
+    android:layout_centerInParent="true">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:layout_marginTop="15dp"
+        android:hint="Nom"
+        android:drawableStart="@drawable/ic_baseline_remove_red_eye_24" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:layout_marginTop="15dp"
+        android:hint="email"
+        android:drawableStart="@drawable/ic_baseline_remove_red_eye_24" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:layout_marginTop="15dp"
+        android:hint="Password"
+        android:drawableStart="@drawable/ic_baseline_remove_red_eye_24" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:layout_marginTop="15dp"
+        android:hint="Confirm Paswword"
+        android:drawableStart="@drawable/ic_baseline_remove_red_eye_24" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sing Up"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/BLUE"
+        />
+
+
+</LinearLayout>

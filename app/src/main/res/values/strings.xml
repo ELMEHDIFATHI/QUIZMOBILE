@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">myInfo</string>
+    <string name="forgot"><font color='#c4c4c4'>Forgot your login ?</font><b>Get Help logging</b></string>
+    <string name="sign_up"><font color='#c4c4c4'>Don\'t have an account> </font><b>create account</b></string>
+
+
+</resources>

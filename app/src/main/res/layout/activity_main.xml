@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz Fast"
+        android:textSize="30sp"
+        android:textColor="#c4C4C4"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+
+
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingStart="28dp"
+        android:paddingEnd="28dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:layout_marginTop="22dp"
+            android:hint="phone number,email or username"
+            android:id="@+id/etemail"
+            android:drawableEnd="@drawable/ic_baseline_email_24" />
+        />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:layout_marginTop="16dp"
+            android:id="@+id/etpassword"
+            android:hint="Password"
+            android:drawableEnd="@drawable/ic_baseline_remove_red_eye_24" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:textColor="@color/white"
+            android:id="@+id/blogin"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/BLUE"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_weight="1"
+                android:background="#e2e2e2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OR"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#9a9a9a"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_weight="1"
+                android:background="#e2e2e2"/>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log in with Facebook"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#3897f0"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:drawablePadding="4dp"
+            />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="#e2e2e2"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etregister"
+        android:text="@string/sign_up"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="14dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

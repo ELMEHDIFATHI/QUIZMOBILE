@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingStart="28dp"
+    android:paddingEnd="28dp"
+    android:layout_centerInParent="true"
+    tools:context=".quiz1">
+
+
+    <ImageView
+        android:layout_width="411dp"
+        android:layout_height="160dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:text="Si je décide de créer une classe qui dérive de View, et de gérer moi-même
+             le rendu graphique de cette vue sur l’objet Canvas,
+             sans que j’ai à intervenir sur son positionnement à l’écran ni sur sa taille, que dois-je faire
+              ?"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+
+        />
+
+
+
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+
+        >
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="  Simplement surcharger la méthode View.draw()" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Surcharger la méthode View.draw() mais également la méhode View.onLayout(boolean, int, int, int, int)" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Aucune des autres réponses" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=" Surcharger la méthode View.onDraw()" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bnext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/BLUE"
+        />
+
+
+</LinearLayout>
